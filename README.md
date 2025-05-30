@@ -102,7 +102,7 @@ npm start
 ```
 
 ## Contributing
-This project was created as part of an academic assignment. Contributions are not expected at this time.  
+This project was created as part of an assignment. Contributions are not expected at this time.  
 Feel free to open issues for questions or suggestions.
 
 ## License
