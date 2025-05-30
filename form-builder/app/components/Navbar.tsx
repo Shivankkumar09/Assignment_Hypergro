@@ -59,7 +59,7 @@ const handleCreateNewForm = () => {
   return (
     <div className={theme === "dark" ? "dark" : ""}>
       <header className="flex items-center justify-between px-6 py-4 shadow  bg-white text-black  dark:bg-gray-900 dark:text-white">
-        <h1 className="text-xl font-bold">Hypergro-Forms</h1>
+        <h1 className="text-xl font-bold">Hypergro Assignment Forms</h1>
        <div className="flex items-center gap-4">
   {/* Preview Button */}
   {!isPreviewPage && (

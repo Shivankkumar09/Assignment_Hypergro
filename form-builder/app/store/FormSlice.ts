@@ -79,6 +79,18 @@ setStepCount: (state, action: PayloadAction<number>) => {
       state.description = '';
       state.fields = [];
     },
+ loadTemplate: (state, action: PayloadAction<{ name: string; description: string; fields: FormField[] }>) => {
+  state.name = action.payload.name;
+  state.description = action.payload.description;
+  state.fields = action.payload.fields.map((f) => ({
+    ...f,
+    id: uuidv4(), // new unique id
+    step: f.step ?? 0,
+  }));
+  state.currentStep = 0;
+  state.stepCount = 1;
+}
+
   },
 });
 
@@ -94,6 +106,11 @@ export const {
   setCurrentStep,
   setStepCount,
   resetForm,
+   loadTemplate,
 } = formSlice.actions;
 
 export default formSlice.reducer;
+function nanoid(): string {
+  throw new Error('Function not implemented.');
+}
+

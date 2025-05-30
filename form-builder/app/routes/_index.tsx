@@ -5,7 +5,7 @@ export default function Index() {
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white flex items-center justify-center px-6">
       <div className="max-w-3xl text-center space-y-6">
         <h1 className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-pink-500 to-yellow-400">
-          Welcome to Hypergro Forms
+          Welcome to Hypergro Assignment Forms
         </h1>
         <p className="text-lg sm:text-xl text-gray-300">
           Create beautiful, customizable forms with drag-and-drop fields, live previews, validation, and sharing. Perfect for surveys, feedback, and data collection.
@@ -16,12 +16,21 @@ export default function Index() {
           <li>🧠 Auto-save, undo/redo, and theme toggle</li>
           <li>🔗 Shareable Form ID & response collection</li>
         </ul>
-        <Link
-          to="/formedit"
-          className="inline-block mt-6 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-lg rounded-xl transition"
-        >
-          Start Building →
-        </Link>
+
+        <div className="flex flex-col items-center gap-4 mt-6">
+          <Link
+            to="/formedit"
+            className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-lg rounded-xl transition"
+          >
+            Start Building →
+          </Link>
+          <Link
+            to="/templates"
+            className="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white font-medium text-lg rounded-xl transition"
+          >
+            Explore Templates 🎨
+          </Link>
+        </div>
       </div>
     </main>
   );
