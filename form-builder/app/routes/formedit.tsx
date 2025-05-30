@@ -1,9 +1,7 @@
 
 import { v4 as uuidv4 } from "uuid";
-import FormCard from "../components/FormCard";
 import type { FieldType, FormField } from "./types/form";
 import Navbar from "../components/Navbar";
-import { useSelector } from "react-redux";
 import { RootState } from "~/store";
 import { useDispatch, useSelector } from "react-redux";
 import {addField,updateField, removeField, setFormName,setFormDescription, setCurrentStep, reorderFields} from "../store/FormSlice";
