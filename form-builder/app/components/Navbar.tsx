@@ -2,7 +2,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { resetForm, toggleTheme } from "../store/FormSlice"; // Adjust the import path as necessary
 import { RootState } from "../store";
-import { useNavigate } from "@remix-run/react";
+import { Link, useNavigate } from "@remix-run/react";
 import { useLocation } from "@remix-run/react";
 
 export default function Navbar() {
@@ -86,7 +86,15 @@ const handleCreateNewForm = () => {
   </button>
 </>)}
 
-
+<Link to="/formedit" className="flex items-center gap-2">
+ {isPreviewPage && <button 
+    className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+  >
+    back to edit
+  </button>
+}
+</Link>
+  {/* Reset Form Button */}
 
   {/* Theme Toggle Button */}
   <button
