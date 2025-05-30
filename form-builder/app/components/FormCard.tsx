@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { FormField, FieldType, updateField, removeField } from "~/store/FormSlice";
+import { FormField, FieldType, updateField, removeField } from "../store/FormSlice"; // Adjust the import path as necessary
 
 interface Props {
   field: FormField;

@@ -1,10 +1,10 @@
-// components/DraggableFormCard.tsx
+
 import {
   useSortable,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import FormCard from "./FormCard";
-import { FormField } from "~/store/FormSlice";
+import { FormField } from "../store/FormSlice";
 import { BsGripHorizontal } from "react-icons/bs"; // or any icon library you use
 
 interface Props {

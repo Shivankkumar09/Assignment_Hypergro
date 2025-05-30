@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "~/store";
-import { FormField } from "~/types/form";
-import Navbar from "~/components/Navbar";
-import StepNavigator from "~/components/StepNavigator";
-import ProgressBar from "~/components/ProgressBar";
+import { RootState } from "../store";
+import { FormField } from "../types/form";
+import Navbar from "../components/Navbar";
+import StepNavigator from "../components/StepNavigator";
+import ProgressBar from "../components/ProgressBar";
 
 export default function PreviewForm() {
   const fields = useSelector((state: RootState) => state.form.fields);

@@ -2,17 +2,16 @@
 import { v4 as uuidv4 } from "uuid";
 import FormCard from "../components/FormCard";
 import type { FieldType, FormField } from "./types/form";
-import Navbar from "~/components/Navbar";
+import Navbar from "../components/Navbar";
 import { useSelector } from "react-redux";
 import { RootState } from "~/store";
 import { useDispatch, useSelector } from "react-redux";
-import {addField,updateField, removeField, setFormName,setFormDescription, setCurrentStep} from "~/store/FormSlice";
+import {addField,updateField, removeField, setFormName,setFormDescription, setCurrentStep, reorderFields} from "../store/FormSlice";
 import { DndContext,closestCenter,PointerSensor,useSensor,useSensors,DragEndEvent} from "@dnd-kit/core";
 import { restrictToVerticalAxis, restrictToWindowEdges } from "@dnd-kit/modifiers";
 import {arrayMove,SortableContext, verticalListSortingStrategy} from "@dnd-kit/sortable";
-import DraggableFormCard from "~/components/DraggableFormCard";
-import { reorderFields } from "~/store/FormSlice";
-import StepNavigator from "~/components/StepNavigator";
+import DraggableFormCard from "../components/DraggableFormCard";
+import StepNavigator from "../components/StepNavigator";
 
 export default function Index() {
 

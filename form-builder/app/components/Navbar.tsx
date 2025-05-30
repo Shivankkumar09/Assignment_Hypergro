@@ -1,7 +1,7 @@
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { resetForm, toggleTheme } from "~/store/formSlice";
-import { RootState } from "~/store";
+import { resetForm, toggleTheme } from "../store/FormSlice"; // Adjust the import path as necessary
+import { RootState } from "../store";
 import { useNavigate } from "@remix-run/react";
 import { useLocation } from "@remix-run/react";
 

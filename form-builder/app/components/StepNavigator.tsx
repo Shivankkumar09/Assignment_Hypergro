@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "~/store";
-import { setCurrentStep } from "~/store/FormSlice";
+import { RootState } from "../store";
+import { setCurrentStep } from "../store/FormSlice"; 
 
 interface StepNavigatorProps {
   isPreviewMode?: boolean; // ✅ Add this prop
