@@ -1,6 +1,6 @@
 // app/store/index.ts
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import formReducer from './formSlice';
+import formReducer from './FormSlice';
 import { loadFormState, saveFormState } from '../utils/localStorage';
 
 const persistedState = loadFormState();
