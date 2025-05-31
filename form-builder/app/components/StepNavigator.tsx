@@ -3,7 +3,7 @@ import { RootState } from "../store";
 import { setCurrentStep } from "../store/FormSlice"; 
 
 interface StepNavigatorProps {
-  isPreviewMode?: boolean; // ✅ Add this prop
+  isPreviewMode?: boolean; 
 }
 
 export default function StepNavigator({ isPreviewMode = false }: StepNavigatorProps) {
@@ -17,12 +17,12 @@ export default function StepNavigator({ isPreviewMode = false }: StepNavigatorPr
 
   const handleNext = () => {
     if (!isPreviewMode) {
-      // 🧠 Skip validation if in edit mode
+      
       dispatch(setCurrentStep(currentStep + 1));
       return;
     }
 
-    // ✅ Validation logic only in preview mode
+    
     const currentFields = fields.filter(field => field.step === currentStep);
 
     for (const field of currentFields) {

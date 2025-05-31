@@ -92,7 +92,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+      
       {isMenuOpen && (
         <div className="md:hidden px-4 py-2 bg-white shadow dark:bg-gray-800 dark:text-white space-y-2">
           {!isPreviewPage && (

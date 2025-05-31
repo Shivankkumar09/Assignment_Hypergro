@@ -1,4 +1,4 @@
-// app/store/index.ts
+
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import formReducer from './FormSlice';
 import { loadFormState, saveFormState } from '../utils/localStorage';
@@ -18,6 +18,6 @@ store.subscribe(() => {
   saveFormState(store.getState());
 });
 
-// Types for TypeScript
+
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

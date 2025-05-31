@@ -1,4 +1,4 @@
-// app/store/formSlice.ts
+
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -11,7 +11,7 @@ export interface FormField {
   label: string;
   placeholder?: string;
   required?: boolean;
-  options?: string[]; // For dropdown or checkbox
+  options?: string[]; 
   minLength?: number;
   maxLength?: number;
   pattern?: string;
@@ -25,8 +25,8 @@ interface FormState {
   description: string;
   fields: FormField[];
   theme: Theme;
-    currentStep: number; // 🆕
-  stepCount: number; // 🆕
+    currentStep: number; 
+  stepCount: number;
 }
 
 
@@ -36,8 +36,8 @@ const initialState: FormState = {
   description: '',
   fields: [],
   theme: 'dark',
-  currentStep: 0, // 🆕
-  stepCount: 1, // 🆕
+  currentStep: 0, 
+  stepCount: 1, 
 };
 
 export const formSlice = createSlice({
@@ -84,7 +84,7 @@ setStepCount: (state, action: PayloadAction<number>) => {
   state.description = action.payload.description;
   state.fields = action.payload.fields.map((f) => ({
     ...f,
-    id: uuidv4(), // new unique id
+    id: uuidv4(), 
     step: f.step ?? 0,
   }));
   state.currentStep = 0;

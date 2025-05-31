@@ -1,4 +1,4 @@
-// app/routes/share.$id.tsx
+
 import { useEffect, useState } from "react";
 import { useParams } from "@remix-run/react";
 

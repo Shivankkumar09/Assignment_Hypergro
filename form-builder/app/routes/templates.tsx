@@ -1,4 +1,4 @@
-// app/routes/templates.tsx
+
 import { useDispatch } from "react-redux";
 import { loadTemplate } from "../store/FormSlice";
 import { useNavigate } from "@remix-run/react";
@@ -41,8 +41,8 @@ export default function TemplatesPage() {
 
 
   const handleUseTemplate = (template: typeof templates[0]) => {
-    dispatch(loadTemplate(template)); // load into Redux
-    navigate("/formedit"); // redirect to editor
+    dispatch(loadTemplate(template)); 
+    navigate("/formedit"); 
   };
 
   return (

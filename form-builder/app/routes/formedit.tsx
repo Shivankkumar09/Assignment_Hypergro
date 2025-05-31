@@ -46,11 +46,11 @@ const handleUpdateField = (id: string, data: Partial<FormField>) => {
 };
 
 const handleDeleteField = (id: string) => {
-  // Remove the field
+ 
   const updatedFields = fields.filter(f => f.id !== id);
   dispatch(removeField(id));
 
-  // Check if current step still has any fields
+  
   const remainingFieldsOnCurrentStep = updatedFields.filter(f => f.step === currentStep);
 
   if (remainingFieldsOnCurrentStep.length === 0) {
@@ -60,9 +60,9 @@ const handleDeleteField = (id: string) => {
     if (previousValidStep !== undefined) {
       dispatch(setCurrentStep(previousValidStep));
     } else if (availableSteps.length > 0) {
-      dispatch(setCurrentStep(availableSteps[0])); // fallback to first available
+      dispatch(setCurrentStep(availableSteps[0])); 
     } else {
-      dispatch(setCurrentStep(0)); // fallback to 0 if no fields exist at all
+      dispatch(setCurrentStep(0)); 
     }
   }
 };
@@ -80,7 +80,7 @@ const handleDragEnd = (event: any) => {
   }
 };
 
-  // Get the current step from Redux store or set a default value
+  
  
 
   return (
@@ -88,7 +88,7 @@ const handleDragEnd = (event: any) => {
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white transition-colors">
         <Navbar />
         <div className="p-6 max-w-4xl mx-auto">
-          {/* Form Title & Description */}
+          
           <div className="mb-6 space-y-4" >
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -116,10 +116,10 @@ const handleDragEnd = (event: any) => {
             </div>
           </div>
 
-          {/* Add Field Buttons */}
+       
           <div className="mb-6">
   <button
-    onClick={() => handleAddField("Text")} // default to "Text"
+    onClick={() => handleAddField("Text")} 
     className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors"
   >
     + Add Field

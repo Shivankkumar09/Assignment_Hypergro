@@ -130,7 +130,7 @@ export default function FormCard({ field }: Props) {
   className="text-lg font-semibold w-full border-b border-gray-300 dark:border-gray-600 mb-2 text-black dark:text-white bg-transparent outline-none"
 />
 
-{/* Placeholder (only for applicable types) */}
+
 {["text", "textarea", "email", "phone"].includes(field.type) && (
   <input
     type="text"
@@ -141,7 +141,7 @@ export default function FormCard({ field }: Props) {
   />
 )}
 
-{/* Help Text */}
+
 <input
   type="text"
   value={field.helpText || ""}
@@ -166,7 +166,7 @@ export default function FormCard({ field }: Props) {
            <option value="phone">phone</option>
       </select>
 
-      {/* Options Editor */}
+      
       {(field.type === "dropdown" || field.type === "checkbox" || field.type === "radio") && (
         <div className="mb-2">
           <div className="space-y-1">
@@ -196,7 +196,7 @@ export default function FormCard({ field }: Props) {
         </div>
       )}
 
-      {/* Preview */}
+     
       <div className="mt-2">{renderFieldPreview()}</div>
 
       <div className="flex justify-between items-center mt-4 text-sm">
