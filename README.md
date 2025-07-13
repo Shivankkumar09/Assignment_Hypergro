@@ -1,6 +1,6 @@
-# Hypergro Assignment Forms
+# FormCrafter
 
-[![Deployed Link](https://img.shields.io/badge/Live%20Site-Assignment--Hypergro-blue)](https://assignment-hypergro-kwd8-6n3ldcp9s-shivanks-projects-43c26258.vercel.app/)  
+[![Deployed Link](https://img.shields.io/badge/Live%20Site-FormCraster)](https://assignment-hypergro-kwd8-6n3ldcp9s-shivanks-projects-43c26258.vercel.app/)  
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/Shivankkumar09/Assignment_Hypergro)
 
 ## Table of Contents
@@ -16,7 +16,7 @@
 - [Package.json Dependencies](#packagejson-dependencies)
 
 ## Project Overview
-**Hypergro Assignment Forms** is a dynamic, interactive form builder application built with **React Remix** and **TypeScript**. It enables users to build customizable forms using a drag-and-drop interface with various field types and live preview functionality.
+**FormCrafter** is a dynamic, interactive form builder application built with **React Remix** and **TypeScript**. It enables users to build customizable forms using a drag-and-drop interface with various field types and live preview functionality.
 This project was developed as an assignment to demonstrate advanced frontend architecture, state management, design thinking, and the ability to build scalable, interactive user interfaces.
 🔗 **Live Demo:** [https://assignment-hypergro-kwd8-6n3ldcp9s-shivanks-projects-43c26258.vercel.app/](https://assignment-hypergro-kwd8-6n3ldcp9s-shivanks-projects-43c26258.vercel.app/)
 
@@ -57,8 +57,8 @@ This project was developed as an assignment to demonstrate advanced frontend arc
 ## Setup & Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Shivankkumar09/Assignment_Hypergro.git
-cd Assignment_Hypergro
+git clone https://github.com/Shivankkumar09/FormCrafter.git
+cd FormCrafter
 
 # Install dependencies
 npm install
