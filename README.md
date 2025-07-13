@@ -1,6 +1,6 @@
 # FormCrafter
-
-[![Deployed Link](https://img.shields.io/badge/Live%20Site-FormCraster)](https://assignment-hypergro-kwd8-6n3ldcp9s-shivanks-projects-43c26258.vercel.app/)  
+[![Live Site](https://img.shields.io/badge/Live%20Site-FormCrafter-blueviolet)]
+  
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/Shivankkumar09/Assignment_Hypergro)
 
 ## Table of Contents
