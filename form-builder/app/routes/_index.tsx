@@ -5,7 +5,7 @@ export default function Index() {
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white flex items-center justify-center px-6">
       <div className="max-w-3xl text-center space-y-6">
         <h1 className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-pink-500 to-yellow-400">
-          Welcome to Hypergro Assignment Forms
+          Welcome to FormCrafter
         </h1>
         <p className="text-lg sm:text-xl text-gray-300">
           Create beautiful, customizable forms with drag-and-drop fields, live previews, validation, and sharing. Perfect for surveys, feedback, and data collection.
