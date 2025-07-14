@@ -1,5 +1,5 @@
 # FormCrafter
-[![Live Site](https://img.shields.io/badge/Live%20Site-FormCrafter-blueviolet)]
+[![Live Site](https://img.shields.io/badge/Live%20Site-FormCrafter-blueviolet)](https://formcrafter-kwd8.vercel.app/)
   
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/Shivankkumar09/Assignment_Hypergro)
 
